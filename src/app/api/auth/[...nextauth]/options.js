@@ -3,6 +3,7 @@ import GitHubProvider from "next-auth/providers/github";
 import db from "../../../../../prisma/db";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from 'bcrypt'
+import { signIn } from "next-auth/react";
 
 export const options = {
     adapter: PrismaAdapter(db),
@@ -64,5 +65,8 @@ export const options = {
             }
             return session
         }
+    },
+    pages: {
+        signIn: '/signin'
     }
 }

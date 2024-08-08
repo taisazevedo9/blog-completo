@@ -15,6 +15,6 @@ export const Github = (props) => {
     }
 
     return (<IconButton {...props} onClick={loginAttempt}>
-        {/* <Image src={githubImg} alt="Github Logo" /> */}
+        <Image src={githubImg} alt="Github Logo" />
     </IconButton>)
 }

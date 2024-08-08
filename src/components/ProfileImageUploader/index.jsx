@@ -1,3 +1,4 @@
+
 'use client'
 
 import Image from "next/image"
@@ -22,7 +23,6 @@ export const ProfileImageUploader = ({ user }) => {
             reader.readAsDataURL(file)
         }
 
-
     }
 
     function uploadAvatar(event) {
@@ -31,7 +31,6 @@ export const ProfileImageUploader = ({ user }) => {
             method: 'POST',
             body: newAvatar
         })
-
 
     }
 
